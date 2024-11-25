@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Job</title>
+    <link rel="stylesheet" href="post-job.css">
+    <script src="post-job.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="#">Post Job</a></h1>
+                <ul class="nav-links">
+                    <li><a href="inner-page.html">Dashboard</a></li>
+                    <li><a href="handy.html" class="btn logout-btn">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="post-job-form">
+            <h2>Post a Job</h2>
+            <form id="jobForm">
+                <!-- Category Selection -->
+                <div class="form-group">
+                    <label for="category">Select Job Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Choose a category</option>
+                        <option value="Carpentry">Carpentry</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Assembling">Assembling</option>
+                        <option value="Plumbing">Plumbing</option>
+                    </select>
+                </div>
+
+                <!-- Additional Details -->
+                <div class="form-group">
+                    <label for="details">Additional Details:</label>
+                    <textarea id="details" name="details" rows="5" placeholder="Provide more details about the job..." required></textarea>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="payment-info">
+                    <p>Posting a job costs <strong>$10</strong>.</p>
+                    <button type="button" id="proceedToPayment" class="btn primary-btn">Proceed to Payment</button>
+                </div>
+
+                <!-- Payment Modal -->
+                <div class="payment-modal" id="paymentModal">
+                    <div class="modal-content">
+                        <h3>Payment Confirmation</h3>
+                        <p>You are about to pay <strong>$10</strong> to post this job.</p>
+                        <button type="submit" class="btn confirm-btn">Confirm Payment & Post Job</button>
+                        <button type="button" id="cancelPayment" class="btn cancel-btn">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+   
+
+</body>
+</html>
