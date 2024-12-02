@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #0078d4;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 5;
+    flex: 1;  
+    text-align: center;  
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cce7ff;
+}
+
+/* Registration Section */
+.register {
+    background: white;
+    padding: 40px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+.register h2 {
+    font-size: 2rem;
+    color: #0078d4;
+    margin-bottom: 20px;
+}
+
+.register .register-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.register-form {
+    text-align: left;
+}
+
+.register-form h3 {
+    font-size: 1.5rem;
+    color: #0078d4;
+    margin-bottom: 15px;
+}
+
+.register-form .form-group {
+    margin-bottom: 20px;
+}
+
+.register-form .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.register-form .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.register-form .form-group input:focus {
+    outline: none;
+    border-color: #0078d4;
+    box-shadow: 0 0 5px rgba(0, 120, 212, 0.5);
+}
+
+.register-form button {
+    width: 100%;
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.register-form button:hover {
+    background: #0056a8;
+    transform: translateY(-2px);
+}
+
+.register-form .login-redirect {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.register-form .login-redirect a {
+    color: #0078d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-form .login-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
